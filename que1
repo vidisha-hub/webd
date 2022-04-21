@@ -1,0 +1,113 @@
+ Q-1: Create a Simple Admission Form for University admissions
+ 
+CODE:
+
+<body bgcolor="aqua">
+    <form>
+        <table cellspacing="2" cellspadding="2">
+            <h1><b>Admission Form</b></h1>
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    <input type="Name" name="">
+                </td>
+            </tr>	
+            <tr>
+                <td>
+                    Middle Name:
+                </td>
+                <td>
+                    <input type="mname" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <input name="lname" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Course:
+                </td>
+                <td>
+                    <select>
+                        <option>Course..</option>
+                        <option>Btech</option>
+                        <option>Bsc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+
+                    <input type="radio" name="Gender">Male
+                    <br>
+                    <input type="radio" name="Gender">Female
+                    <br>
+                    <input type="radio" name="Gender">Others
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone:
+                </td>
+                <td>
+                    <select>
+                      <option>+91</option>
+                      <option>+910</option>
+                      <option>+911</option>
+                  </select>
+                    <input type="Number" name="">
+                </td>
+                <tr>
+                    <td>
+                        Address:
+                    </td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="EMAIL" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Re-type Password:
+                    </td>
+                    <td>
+                        <input type="Repassword" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="Submit" name="">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
