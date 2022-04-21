@@ -1,0 +1,63 @@
+Q-10:Write a JavaScript function to check whether a given value is an valid password &
+         mail-id or not.
+
+CODE:
+HTML and CSS:
+
+<title>Valid Email and Password</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check valid mail and password</h1>
+    <div>
+        <div>
+            <label for="email">
+                Enter Email ID: 
+                <input type="text" id="email" name="email">
+            </label>
+        </div>
+        <div>
+            <button id="btn1" onclick="check1()">Check1</button>
+        </div>	
+        <div>
+            <label for="password">
+                Enter Password: 
+                <input type="password" id="pass" name="pass">
+            </label>
+        </div>
+        <div>
+            <button id="btn2" onclick="check2()">Check2</button>
+        </div>
+    </div>
+</body>
+<script src="/filename.js"></script>
+</html>
+
+JS:
+function check1() {
+  var s = document.getElementById("email");
+  var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+  if (s.value.match(mailformat)) {
+      alert("Valid email address!");
+      return true;
+  } else {
+      alert("You have entered an invalid email address!");
+      return false;
+  }
+}	
+function check2() {
+  var pw = document.getElementById("pass");
+  var passw = /^[A-Za-z]\w{7,14}$/;
+  if (pw.value.match(passw)) {
+      alert('Correct password!')
+      return true;
+  } else {
+      alert('Wrong password!')
+      
+return false;
+  }
+}
