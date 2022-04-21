@@ -1,0 +1,78 @@
+-2:  Write a Simple HTML Script to make your Time-Table.
+
+CODE:
+
+<body>
+      <body>
+        <h3 style="text-align: center;">GRAPHIC ERA DEEMED TO BE UNIVERSITY Rev. 1.1</h3>
+        <h3 style="text-align: center;">ONLINE TIME TABLE OF B. TECH. VIth SEMESTER – COMPUTER SCIENCE & ENGG. -E</h3>
+        <h3 style="text-align: center;">ACADEMIC YEAR 2022-23</h3>
+
+        <table border="1" style="border-collapse: collapse;" align="center" cellpadding="20">
+            <tr>
+                <th></th>
+                <th>9:00-9:55</th>
+                <th>9:55-10:50</th>
+                <th>11:10-12:05</th>
+                                <th>12:05-1:00</th>
+                <th>1:00-1:55</th>
+                <th>1:55-2:50</th>
+                <th>3:10-4:05</th>
+                <th>4:05-5:00</th>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <td style="text-align: center;">TCS-602</td>
+                <td style="text-align: center;">TCS-693</td>
+                <td style="text-align: center;">TCS-601</td>
+                <td style="text-align: center;">TCS-691/<br>TCS-651/<br>TCS-619</td>
+                <td style="text-align: center;">Lunch</td>
+                <td style="text-align: center;">XCS-601<br>(PDP)</td>
+                <td colspan="2" style="text-align: center;">Career Excellence Classes<br>(CEC)</td>
+            </tr>	
+            <tr>
+                <th>Tue</th>
+                <td style="text-align: center;">TCS-602</td>
+                <td style="text-align: center;">TCS-693</td>
+                <td style="text-align: center;">TCS-601</td>
+                <td style="text-align: center;">TCS-691/<br>TCS-651/<br>TCS-619</td>
+                <td style="text-align: center;">Lunch</td>
+                <td style="text-align: center;">XCS-601<br>(QAR)</td>
+                <td style="text-align: center;">TCS-604</td>
+                <td style="text-align: center;">TCS-604</td>
+            </tr>
+            <tr>
+                <th>Wed</th>
+                <td style="text-align: center;">TCS-602</td>
+                <td style="text-align: center;">TCS-693</td>
+                <td style="text-align: center;">TCS-601</td>
+                <td style="text-align: center;">TCS-691/<br>TCS-651/<br>TCS-619</td>
+                <td style="text-align: center;">Lunch</td>
+                <td style="text-align: center;">Lib</td>
+                <td style="text-align: center;">TCS-604</td>
+                <td style="text-align: center;">TCS-604<br>(Discussion Class)</td>
+            </tr>
+            <tr>
+                <th>Thu</th>
+                <td style="text-align: center;">TCS-602<br>(Discussion Class)</td>
+                <td style="text-align: center;">TCS-693<br>(Discussion Class)</td>
+                <td style="text-align: center;">TCS-601<br>(Discussion Class)</td>
+                <td style="text-align: center;">TCS-691/<br>TCS-651/<br>TCS-619<br>(Discussion Class)</td>
+                <td style="text-align: center;">Lunch</td>
+                <td colspan="3" style="text-align: center;">SWAYAM/Trainng/Extra-Curricular Activities/LB</td>
+            </tr>
+            <tr>
+                <th>Fri</th>
+                <td colspan="2" style="text-align: center;">Software Engineering Lab</td>
+                <td colspan="2" style="text-align: center;">Complier Design Lab</td>
+                <td style="text-align: center;">Lunch</td>
+                <td style="text-align: center;">Lib</td>
+                <td colspan="2" style="text-align: center;">Web Development Lab</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+
+
+
