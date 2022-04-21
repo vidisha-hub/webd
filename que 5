@@ -1,0 +1,45 @@
+Q-5:Write a JavaSript function to check whether an ‘input’ is an integer or not.
+       Test Data:
+       ‘ABCD’
+       false
+       [17,52,94,60]
+      true
+
+CODE:
+   
+ <title>Document</title>
+   <script>
+        function check()
+        {
+            let s = document.getElementById("f1").value;
+            console.log(!/\D/.test(s));
+            if(/^[0-9]+([,][ ]?[0-9]+)*$/.test(s))
+            {
+                alert("true");
+            }
+            else
+            {	
+                alert('false');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<form >
+    <label>Enter a number</label>
+    <input type="text" name="number" id="f1">
+    <br>
+    <button type="button" onclick="check()">Check</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
