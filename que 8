@@ -1,32 +1,44 @@
 Q-8: Write a JavaScript program to calculate the volume of cube using form.
 CODE:
 
+HTML:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 8</title>
+<!-- <link rel="stylesheet" href="cube.css"/> -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 </head>
-<body bgcolor="pink">
-    <form action="" id="input1" >
-        <table>
-            <tr>
-            <td><b>Enter side:</b></td>
-       <td><input id="i1"></td> 
-       </tr>
-       <tr>
-        <td><b>Volume of cube:</b></td>
-        <td><input id="res"></td>
-         </tr>
-        <TR><TD><input type="button" id="button2" onclick="volu()" value="volume"></TD></TR>
-        </table>
-    </form>
-   <script>
-       function volu(){
-           var n=document.forms["input1"]["i1"].value;
-           document.getElementById("res").value=n*n*n; }
-   </script>
-</body></html>
+<body>
+<h1>volume of cube</h1>
+<form action="" id="input1">
+<table>
+<tr>
+<td><b>Enter volume side</b></td>
+<td><input id="i1"></td>
+</tr>
+<tr>
+<td><b>volume of cube</b></td>
+<td><input id="res"></td>
+</tr>
+
+<TR><TD><input type="button" id="button2" onclick="volume()" value="volu"></TD></TR>
+</table>
+</form>
+<script src="cube.js"></script>
+</body>
+</html>
+
+JS:
+
+function volume(){
+    var n=document.forms["input1"]["i1"].value;
+document.getElementById("res").value=n*n*n;
+}
+
+
+
 
