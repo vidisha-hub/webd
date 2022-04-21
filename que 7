@@ -4,30 +4,67 @@ Q-7: Write a JavaScript function to draw the following diagram[use moveto() func
 	
 CODE:
 
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="move.css"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 </head>
-<body onload="draw();">
-    <canvas id="canvas" width="250" height="250"></canvas>
-    </body>
+<body>
+<h1>Draw the diagram</h1>
+<div id="canvas-container">
+<canvas id="canvas-smile" width="600" height="500">
 
-    <script>
-        function draw() 
-{	
-  var canvas = document.getElementById('canvas');
-  if (canvas.getContext)
-  {
-    var context = canvas.getContext('2d');
-    context.beginPath();
-   // Outer circle
-    context.arc(75,75,50,0,Math.PI*2,true);
-    context.moveTo(110,75);
-    // Mouth   context.arc(75,75,35,0,Math.PI,false); 
-    // Lefy and Right eye
-    context.moveTo(55,65);
-    context.arc(60,65,5,0,Math.PI*2,true); 
-    context.arc(90,65,5,0,Math.PI*2,true);
-    context.stroke(); } }
-    </script>
+</canvas>
+</div>
+<script src="move.js"></script>
+</body>
 </html>
 
+CSS:
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+#canvas-container{
+    width: 80;
+    text-align: center;
+    margin: auto auto;
+}
+#canvas-smile{
+    background-color: aliceblue;
+    border: 1px solid black;
+}
 
+JSS:
+
+var canvas= document.getElementById('canvas-smile');
+var ctx=canvas.getContext('2d');
+ctx.beginPath();
+//outer circle
+
+ctx.arc(300, 255, 120, 0, Math.PI * 2, true);
+
+//smile
+
+ctx.moveTo(390,255);
+ctx.arc(300, 255, 90, 0, Math.PI, false);
+
+//left eye
+ctx.moveTo(270,220);
+ctx.arc(255, 220, 15, 0, Math.PI *2, true);
+
+//right eye
+ctx.moveTo(360,220);
+ctx.arc(345, 220, 15, 0, Math.PI * 2, true);
+
+//lines in between eyes
+ctx.moveTo(240,220);
+ctx.lineTo(360,220);
+ctx.stroke();
