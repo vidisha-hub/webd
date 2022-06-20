@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>admission form</title>
+        <style>
+.geu{
+    background-color: #d2691e;
+    font-style: italic;
+    font-size: large;
+}
+        </style>
+        <body bgcolor="pink">
+         <form  method="POST">
+             <div class ="geu">
+                <h1><p align="center" >student registration</p> </h1>
+             </div>
+            <h3 ><p>Student name:</p></h3>
+                 <input type="text" name="name1" id="Studentname" value=""
+                 placeholder="enter your name"  /><br/>
+                 <h3 ><p>Father name:</p></h3>
+                 <input type="text" name="name1" id="Studentname" value=""
+                 placeholder="enter your father name"  /><br/>
+                 <h3 ><p>Mother  name:</p></h3>
+                 <input type="text" name="name1" id="Studentname" value=""
+                 placeholder="enter your mother name"  /><br/>
+                 <h3 ><p>email:</p></h3>
+                 <input type="email" name="email1" id="Studentname" value=""
+                 placeholder="enter your email"  /><br/>
+                 <h3 ><p>enter your password:</p></h3>
+                 <input type="password" name="pass" id="Studentname" value=""
+                 placeholder="enter your pass"  /><br/>
+                 <h3 ><p>gender:</p></h3>
+                 <input type="radio" name="r" id="Studentname" value="m" /> male <br/>
+        
+                 <input type="radio" name="r" id="Studentname" value="f" /> female<br/>
+                 
+                 <input type = "submit" value = "SUBMIT"/>
+                 <input type = "reset" value = "RESET"/>
+         </form>
+         
+         <?php
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $name2=$_REQUEST['name1'];
+        if(empty($name2)){
+            echo "name is empty";
+        }
+        else{
+            echo "$name2";
+        }
+        $email2=$_REQUEST['email1'];
+        if(empty($email2)){
+            echo "email is empty";
+        }
+        else{
+            echo "$email2";
+        }
+        
+        $pass2=$_REQUEST['pass'];
+        if(empty($pass2)){
+            echo "pass is empty";
+        }
+        else{
+            echo "$pass2";
+        }
+        
+
+    }
+    ?>
+
+        </body>
+    </head>
+</html>
