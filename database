@@ -1,0 +1,82 @@
+<?php
+$servername ="localhost";
+$username="root";
+$password="";
+$conn=mysqli_connect($servername,$username,$password);
+//checking conn
+if(!$conn)
+{
+    die("connection failed:".mysqli_connect_error());
+}
+echo "connection successfull";
+
+$sql="create database geustd6";
+if(mysqli_query($conn,$sql)){
+    echo "successfully created";
+}
+else{
+echo mysqli_error($conn);
+}
+$db = "geustd6";
+$conn=mysqli_connect($servername,$username,$password,$db);
+
+$sql="CREATE TABLE std3(name VARCHAR(30) NOT NULL,email VARCHAR(30) NOT NULL,phone INT(10) NOT NULL)";
+if(mysqli_query($conn,$sql)){
+    echo "table created";
+}
+else{
+    echo mysqli_error($conn);
+}
+$sql ="INSERT INTO std3(name,email,phone) VALUES ('ANSHUL','anshul@1234.com',123434567)";
+if(mysqli_query($conn,$sql)){
+    echo "new record create";
+}
+else{
+    echo mysqli_error($conn);
+}
+
+
+$sql = "SELECT * FROM std3";
+$result=mysqli_query($conn,$sql);
+if(mysqli_num_rows($result)>0){
+        echo"<table border=1>";
+        echo "<tr>";
+        echo "<th>name</th>";
+        echo "<th>email</th>";
+        echo "<th>phone</th>";
+        echo"</tr>";
+        while($row=mysqli_fetch_array($result)){
+            echo "<tr>";
+            echo "<td>".$row[0]."</td>";
+            echo "<td>".$row[1]."</td>";
+            echo "<td>".$row[2]."</td>";
+        echo"</tr>";
+        }
+        echo "</table>";
+    }
+
+
+// $sql="DELETE FROM std3 WHERE phone='123434567'";
+// if(mysqli_query($conn,$sql)){
+
+//     echo "record delete";
+
+// }
+// else {
+   
+//  mysqli_error($conn);
+
+// }
+// mysqli_close($conn);
+// 
+// $sql = "UPDATE std3 SET name = 'MRIDUL' WHERE name='ANSHUL'";
+// if(mysqli_query($conn,$sql)){
+//     echo "update successful";
+
+// }
+// else{
+//     mysqli_error($conn);
+    
+// }
+// 
+?>
